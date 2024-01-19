@@ -1,0 +1,1249 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-10-11 20:04:55",
+    "containerVersion": {
+        "path": "accounts/6001401512/containers/31658630/versions/4",
+        "accountId": "6001401512",
+        "containerId": "31658630",
+        "containerVersionId": "4",
+        "name": "v2.1",
+        "container": {
+            "path": "accounts/6001401512/containers/31658630",
+            "accountId": "6001401512",
+            "containerId": "31658630",
+            "name": "Template - by Domum Analytica",
+            "publicId": "GTM-TSGVTSS",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1696900860059",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6001401512/containers/31658630/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-TSGVTSS"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "5",
+                "name": "Facebook - Pixel",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code -->\n<script>\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,'script',\n  'https://connect.facebook.net/en_US/fbevents.js');\n  fbq('init', '{{[ALTERAR] Facebook - Setup - Pixel ID}}');\n  fbq('track', 'PageView');\n</script>\n<noscript>\n  <img height=\"1\" width=\"1\" style=\"display:none\"\n    src=\"https://www.facebook.com/tr?id={{[ALTERAR] Facebook - Setup - Pixel ID}}&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Meta Pixel Code -->"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1697051550369",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "3",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "10",
+                "name": "[ALTERAR] GA4 - Event - Lead",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_tag_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "GA4 - Event - Lead"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Form ID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_sub_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Click Text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "generate_lead"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{[ALTERAR] GA4 - Setup - ID da métrica}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{GA4 - Setup - Default events}}"
+                    }
+                ],
+                "fingerprint": "1697054624154",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "parentFolderId": "8",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "15",
+                "name": "[ALTERAR] Google Ads - Event - Visualização de página",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[ALTERAR] Google Ads - Setup - Código de conversão}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "XXX"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1696901263687",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "13",
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "16",
+                "name": "Google Ads - Pixel - Remarketing",
+                "type": "sp",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDynamicRemarketing",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[ALTERAR] Google Ads - Setup - Código de conversão}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customParamsFormat",
+                        "value": "NONE"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1696901247869",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "13",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "17",
+                "name": "Facebook - Event - Lead",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\nfbq('track', 'Lead');\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1696901323377",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "parentFolderId": "3",
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "20",
+                "name": "GA4 - Pixel",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{[ALTERAR] GA4 - Setup - ID da métrica}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_tag_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "GA4 - Pixel"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "send_page_view"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{GA4 - Setup - Default events}}"
+                    }
+                ],
+                "fingerprint": "1697054194314",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "8",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "22",
+                "name": "Google Ads - Pixel - Vinculador de Conversões",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1696901238259",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "13",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "24",
+                "name": "Clarity - Pixel",
+                "type": "cvt_31658630_23",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "projectId",
+                        "value": "{{[ALTERAR] Clarity - Setup - Project Id}}"
+                    }
+                ],
+                "fingerprint": "1696901367251",
+                "firingTriggerId": [
+                    "12"
+                ],
+                "parentFolderId": "18",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "tagId": "26",
+                "name": "[ALTERAR] Google Ads - Event - Lead",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[ALTERAR] Google Ads - Setup - Código de conversão}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "XXX"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1696901275301",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "parentFolderId": "13",
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "triggerId": "7",
+                "name": "[ALTERAR] - GTM Event - form_submit",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "form_submit"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "xxxx.com.br"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Form ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "xxx"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1696900883367",
+                "parentFolderId": "6"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "triggerId": "11",
+                "name": "GTM Click Link - wa.me/message",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "wa.me/message"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1696900883368",
+                "parentFolderId": "6"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "triggerId": "12",
+                "name": "DOM Ready",
+                "type": "DOM_READY",
+                "fingerprint": "1696900883368",
+                "parentFolderId": "6"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "triggerId": "21",
+                "name": "GTM Click Link - api.whatsapp.com",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "api.whatsapp.com"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1696900883369",
+                "parentFolderId": "6"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "triggerId": "33",
+                "name": "Window Loaded",
+                "type": "WINDOW_LOADED",
+                "fingerprint": "1697054257378",
+                "parentFolderId": "6"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "4",
+                "name": "[ALTERAR] Facebook - Setup - Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "00000"
+                    }
+                ],
+                "fingerprint": "1697051956162",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "9",
+                "name": "[ALTERAR] GA4 - Setup - ID da métrica",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-XXX"
+                    }
+                ],
+                "fingerprint": "1696901191639",
+                "parentFolderId": "8",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "14",
+                "name": "[ALTERAR] Google Ads - Setup - Código de conversão",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "XXX"
+                    }
+                ],
+                "fingerprint": "1696901255910",
+                "parentFolderId": "13",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "19",
+                "name": "[ALTERAR] Clarity - Setup - Project Id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "XXX"
+                    }
+                ],
+                "fingerprint": "1696901340537",
+                "parentFolderId": "18",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "25",
+                "name": "DataLayer - form_id",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "eventModel.form_id"
+                    }
+                ],
+                "fingerprint": "1696900883370",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "32",
+                "name": "GA4 - Setup - Default events",
+                "type": "gtes",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_settings"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{GTM - Container ID}} Version:{{GTM - Container Version}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_tag_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "gtm_sub_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "event_timestamp"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{CJS - Timestamp}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "content_group"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{[ALTERAR] GA4 - Setup - Content Group Table}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "userProperties",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "custom_gclid"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{URL query - gclid}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "custom_fbclid"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{URL query - fbclid}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "custom_ga"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Cookie - _ga}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1697054233908",
+                "parentFolderId": "8"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "34",
+                "name": "GTM - Container ID",
+                "type": "cid",
+                "fingerprint": "1697054257379",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "35",
+                "name": "GTM - Container Version",
+                "type": "ctv",
+                "fingerprint": "1697054257379",
+                "parentFolderId": "6"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "36",
+                "name": "CJS - Timestamp",
+                "type": "jsm",
+                "notes": "Traz o timestamp.",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  return Date.now();\n}"
+                    }
+                ],
+                "fingerprint": "1697054257380",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "37",
+                "name": "URL query - fbclid",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "fbclid"
+                    }
+                ],
+                "fingerprint": "1697054277284",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "38",
+                "name": "URL query - gclid",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "gclid"
+                    }
+                ],
+                "fingerprint": "1697054264530",
+                "parentFolderId": "13",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "39",
+                "name": "Cookie - _ga",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "_ga"
+                    }
+                ],
+                "fingerprint": "1697054289196",
+                "parentFolderId": "8",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "variableId": "40",
+                "name": "[ALTERAR] GA4 - Setup - Content Group Table",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Page URL}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "/example"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "example"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1697054661706",
+                "parentFolderId": "8",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "folderId": "3",
+                "name": "Facebook Ads",
+                "fingerprint": "1696900883366"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "folderId": "6",
+                "name": "Global",
+                "fingerprint": "1696900883367"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "folderId": "8",
+                "name": "GA4",
+                "fingerprint": "1696900883367"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "folderId": "13",
+                "name": "Google Ads",
+                "fingerprint": "1696900883368"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "folderId": "18",
+                "name": "Clarity",
+                "fingerprint": "1696900883369"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "CLICK_ELEMENT",
+                "name": "Click Element"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "CLICK_TARGET",
+                "name": "Click Target"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "FORM_ELEMENT",
+                "name": "Form Element"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "FORM_CLASSES",
+                "name": "Form Classes"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "FORM_TARGET",
+                "name": "Form Target"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "FORM_URL",
+                "name": "Form URL"
+            },
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "type": "FORM_TEXT",
+                "name": "Form Text"
+            }
+        ],
+        "fingerprint": "1697054682390",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6001401512/containers/31658630/versions/4?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6001401512",
+                "containerId": "31658630",
+                "templateId": "23",
+                "name": "Microsoft Clarity - Official",
+                "fingerprint": "1696900883370",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Microsoft Clarity - Official\",\n  \"categories\": [\n    \"ANALYTICS\",\n    \"HEAT_MAP\",\n    \"SESSION_RECORDING\"\n  ],\n  \"brand\": {\n    \"id\": \"github.com_microsoft\",\n    \"displayName\": \"microsoft\",\n    \"thumbnail\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUAAADyUCJ/ugAApO//uQD///8951e2AAAAAXRSTlMAQObYZgAAAAFiS0dEBfhv6ccAAAAHdElNRQfkCgUWITsZUDiiAAAAS0lEQVRo3u3MQQ3AIAAEsMuCAGZhCkiwgH9NOLj3Hq2A5q1m8nxVBAKBQCAQCAQCgUAgEPSAP9jVSsapBAKBQCAQCAQCgUAgEPTgAruK0CdlWNSzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTEwLTA1VDIyOjMzOjU5KzAwOjAwPT1n8QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0xMC0wNVQyMjozMzo1OSswMDowMExg300AAAAASUVORK5CYII\\u003d\"\n  },\n  \"description\": \"Clarity is a user behavior analytics tool, which helps you understand how users are interacting with your website. Supported features include:\\nSession Recordings\\nHeatmaps\\nML Insights\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"projectId\",\n    \"displayName\": \"Clarity Project Id\",\n    \"simpleValueType\": true,\n    \"help\": \"Copy your clarity project Id here. You can find it in the project Url from the browser. Example: https://clarity.microsoft.com/projects/view/\\\"projectId\\\"/\",\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\",\n        \"errorMessage\": \"You must provide a clarity project Id\"\n      },\n      {\n        \"type\": \"REGEX\",\n        \"args\": [\n          \"[0-9a-z]+\"\n        ],\n        \"errorMessage\": \"Incorrect project Id. You can find it in the project Url from the browser. Example: https://clarity.microsoft.com/projects/view/\\\"projectId\\\"/\"\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n// Require the necessary APIs\nconst injectScript = require('injectScript');\nconst queryPermission = require('queryPermission');\nconst createArgumentsQueue = require('createArgumentsQueue');\nconst encodeUri = require('encodeUri');\n\n//Create clarity const\nconst clarity = createArgumentsQueue('clarity', 'clarity.q');\n\n// Reconstruct customer clarity script URL\nconst url = \"https://www.clarity.ms/tag/\"+encodeUri(data.projectId)+\"?ref=gtm\";\n\n// Handle Success\nconst onCustomerSuccess = () => {\n  data.gtmOnSuccess();\n};\n\n// Handle Failure\nconst onCustomerFailure = () => {\n  data.gtmOnFailure();\n};\n\n\n// If the URL input by the user matches the permissions set for the template,\n// inject the script with the onSuccess and onFailure methods as callbacks.\nif (queryPermission('inject_script', \"https://www.clarity.ms\")) {\n  injectScript(url, onCustomerSuccess, onCustomerFailure);\n} else {\n  data.gtmOnFailure();\n}\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"inject_script\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urls\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"https://www.clarity.ms/*\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"clarity\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"clarity.q\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 2/2/2021, 12:41:15 PM\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "microsoft",
+                    "repository": "clarity-gtm-template",
+                    "version": "bdc2637b7be5926c825facc58454fe37d7534c1b",
+                    "signature": "47de4bf34399bb641d11eb953bd4790d9d811258f8ca308ba7c0081c26cc966a"
+                }
+            }
+        ]
+    }
+}
