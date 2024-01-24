@@ -1036,12 +1036,12 @@
                     {
                         "type": "BOOLEAN",
                         "key": "setDefaultValue",
-                        "value": "false"
+                        "value": "true"
                     },
                     {
                         "type": "TEMPLATE",
                         "key": "input",
-                        "value": "{{Page URL}}"
+                        "value": "{{Page Path}}"
                     },
                     {
                         "type": "BOOLEAN",
@@ -1057,6 +1057,11 @@
                         "type": "BOOLEAN",
                         "key": "ignoreCase",
                         "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "Outros"
                     },
                     {
                         "type": "LIST",
