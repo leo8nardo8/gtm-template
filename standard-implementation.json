@@ -434,7 +434,7 @@
                 ],
                 "fingerprint": "1696901367251",
                 "firingTriggerId": [
-                    "12"
+                    "33"
                 ],
                 "parentFolderId": "18",
                 "tagFiringOption": "ONCE_PER_EVENT",
